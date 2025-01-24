@@ -1,0 +1,59 @@
+# Python Bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Django specific
+*.log
+*.pot
+*.py[cod]
+media/
+*.mo
+
+# Environments
+.env
+*.env
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# System files
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+
+# Tests
+.coverage
+.tox/
+.nox/
+
+# Celery
+celerybeat-schedule
+*.pid
+
+# Build files
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# Static files
+staticfiles/
+static/
+
+# Local settings
+local_settings.py
+settings_local.py
