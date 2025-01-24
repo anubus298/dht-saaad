@@ -34,7 +34,7 @@ telepot==12.7
 twilio==8.10.0
 typing_extensions==4.8.0
 tzdata==2023.3
-urllib3==2.0.7
+urllib3==1.26.6
 vonage==3.11.0
 vonage-jwt==1.1.0
 wrapt==1.15.0
