@@ -85,8 +85,12 @@ WSGI_APPLICATION = 'projet.wsgi.application'
 
 DATABASES = {
     'default': {
-        "ENGINE": "libsql.db.backends.sqlite3",
-        "NAME": "libsql://dhtdht-anubus298.turso.io?authToken=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3Mzc3NTU1MDQsImlkIjoiOTEwMmM0ZmItODk0NC00Y2E1LTk2ZjEtYzA2NTg1YTc3MjE5In0.CpAAeOEV8fnEZWGEZqGF9jmgAvqB08DSsNaksd1-gc1xaHov0uqRmuDoUUK6S7mTBuwdVhEONEp3x-Xv-uQvBw",
+        "ENGINE": "django.db.backends.postgresql",
+        'NAME': 'neondb',        # Your database name
+        'USER': 'neondb_owner',            # Your database username
+        'PASSWORD': 'npg_2dBc7pihwrtf',    # Your database password
+        'HOST': 'ep-red-term-a29p2xrr-pooler.eu-central-1.aws.neon.tech',         # Set to your PostgreSQL server's IP or domain
+        'PORT': '5432',   
     }
 }
 
