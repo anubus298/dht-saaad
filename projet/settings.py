@@ -81,12 +81,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'projet.wsgi.application'
 
 
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
