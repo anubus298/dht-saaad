@@ -1,27 +1,27 @@
 {
   "builds": [
     {
-      "src": "projet/asgi.py",
-      "use": "@vercel/python"
+      "src": "projet/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb"
+      }
     },
     {
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "projet/static"
+        "distDir": "staticfiles"
       }
     }
   ],
 
   
   "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
+    
     {
       "src": "/(.*)",
-      "dest": "projet/asgi.py"
+      "dest": "projet/wsgi.py"
     }
   ]
 }

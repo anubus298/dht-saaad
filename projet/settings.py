@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -79,6 +80,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'projet.wsgi.application'
 
+
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -137,7 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-os.path.join(BASE_DIR, "projet/static")]
+os.path.join(BASE_DIR, "staticfiles")]
 
 
 #ETAPE D'alerte
