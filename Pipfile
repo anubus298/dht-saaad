@@ -45,6 +45,7 @@ vonage-jwt==1.1.0
 wrapt==1.15.0
 yarl==1.9.2
 psycopg2-binary==2.9.10
+whitenoise==6.8.2
 [dev-packages]
 
 [requires]
